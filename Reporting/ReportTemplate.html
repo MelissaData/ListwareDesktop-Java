@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>POC Output Report</title>
+</head>
+
+<style>
+table.table1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table.table1 td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+table.table2 {
+    font-family: arial, sans-serif;
+	font-weight: normal;	
+	font-size: medium;
+    border-collapse: collapse;
+    width: 100%;
+}
+table.table2 td, th {
+    border: 1px solid #dddddd;
+	border-color: black;
+	font-weight: normal;	
+	font-size: small;
+    text-align: left;
+    padding: 6px;
+    width:100%;
+}
+table.table2 th {
+    background-color: #E0FFFF;
+    color: black;
+}
+
+table.table3 {
+    font-family: arial, sans-serif;
+	font-weight: normal;	
+	font-size: small;
+    border-collapse: collapse;
+    width: 700px;
+}
+table.table3 td, th {
+    border: 1px solid #dddddd;
+	border-color: black;
+	font-weight: normal;	
+	font-size: small;
+    text-align: left;
+    padding: 6px;
+    width:50%;
+}
+
+table.table3 th {
+    background-color: #E0FFFF;
+    color: black;
+}
+table.table3 tr:nth-child(even) {
+    background-color: #f2f2f2;
+	page-break-inside: avoid;
+}
+table.head1 td {
+	font-family: arial;
+	font-size: large;
+	border-bottom: solid;
+	border-width: 1px;
+	border-bottom-color: grey;
+}
+table.head2 td {
+	font-family: arial;
+	font-size: large;
+}
+table.image td{
+	border-bottom: solid;
+	border-width: 2px;
+}
+
+
+</style>
+
+
+
+<body>
+<!--<p hidden id="pieHolder">hidemew</p>-->
+<div align="center">
+<TABLE class="image" border='0' cellpadding='0' cellspacing='0' width='700'>
+			<TR>
+				<!--TD background='background.gif' height='59'-->
+					<!--a href='http://www.melissadata.com'-->
+					<img border='0' src='data:image/png;base64,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' width='400' height='170'>
+				<!--/TD-->
+			</TR>
+			<TR style='font-family:arial;font-size:110%;color:white'>
+				<TD align='center' background='background.gif' colspan='4' height='30'><B>Data Quality Results Report</B></TD>
+			</TR>
+</TABLE>
+<br />
+<table class="head1" width="700" border="0" cellspacing="0" cellpadding="0">
+    <tr><td>Client: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[Client]</span></td></tr>
+	<tr><td>Ident: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[IDENT]</span></td></tr>
+	<tr><td>Job: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[JOB_DESC]</span></td></tr>
+	<tr><td>Contact: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[Melissa_Contact]</span></td></tr>
+    <tr><td>File: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[ProcessedFile]</span></td></tr>	
+</table></td></tr>
+<br />
+<br />
+
+<table class="head2" width="700" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="151px">Total Records: </td><td align="left" height="25"><span style="font-size: 18px; color: #17202A">[Total]</span></td></tr>	
+</table></td></tr>
+<br />
+<br />
+
+<!--code will add this section-->
+<!--/div></body></html--> 
+
+
+
